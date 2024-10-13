@@ -1,0 +1,23 @@
+body{
+    background: url("img/bg.png") ;
+    height: 100vh;
+    background-position: center;
+    background-size:cover ;
+    background-repeat: no-repeat;
+}
+
+.all{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.li a{
+    color: white !important;
+    font-size: 14px;
+}
+.link-page{
+    border: 1px white solid !important;
+    border-radius: 10px !important;
+    /* display: flex !important;
+    justify-content: space-between !important; */
+}
