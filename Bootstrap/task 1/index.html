@@ -15,8 +15,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
 </head>
 <body>
+    <div class="overall">
     <nav class="navbar navbar-expand-lg pt-lg-3 cen">
         <div class="container-fluid">
             <div class="row w-100 all">
@@ -35,7 +38,7 @@
             </button>
             <div class="col-lg-8 links">
                 <!-- Center: Navbar Links -->
-                <div class="collapse navbar-collapse mx-lg-4 link-page "  id="navbarNav">
+                <div class="collapse navbar-collapse my-lg-4  me-6 link-page "  id="navbarNav">
                     <ul class="navbar-nav w-100 d-flex justify-content-around">
                         <li class="nav-item li">
                             <a class="nav-link active" href="#">INTRO</a>
@@ -60,14 +63,14 @@
             </div>
             <div class="col-lg-2">
                 <!-- Right: Social Icons -->
-                <div class="d-flex  icons">
-                    <a href="#" class="text-light me-3">
+                <div class="d-flex my-lg-4 ms-lg-5  icons">
+                    <a href="#" class="text-light me-4">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="#" class="text-light me-3">
+                    <a href="#" class="text-light me-4">
                         <i class="fab fa-instagram"></i>
                     </a>
-                    <a href="#" class="text-light me-3">
+                    <a href="#" class="text-light me-4">
                         <i class="fab fa-twitter"></i> <!-- This is for "X" (formerly Twitter) -->
                     </a>
                 </div>
@@ -75,9 +78,49 @@
         </div>
         </div>
     </nav>
+    <!-- content-->
+     <div class="container me-lg-5 c">
+        <div class="row">
+            <div class="col-lg-4 con">
+                <h3>SCREENSHOT</h3>
+                <p>Qitup App Screenshots</p>
+                <button class="btn px-4 py-3 mt-2">DOWNLOAD THE APP</button>
+            </div>
+            <div class="col-lg-8 sc">
+                <div class="slider mx-lg-4 mb-lg-5">
+                    <div><img src="img/sc.png" alt="Image 1"></div>
+                    <div><img src="img/sc.png" alt="Image 2"></div>
+                    <div><img src="img/sc.png" alt="Image 3"></div>
+                    <div><img src="img/sc.png" alt="Image 4"></div>
+                    <div><img src="img/sc.png" alt="Image 5"></div>
+                </div>
+                
+            </div>
+        </div>
+     </div>
+    </div>
+    
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+<script>
+    $(document).ready(function(){
+    $('.slider').slick({
+        centerMode: true,
+        centerPadding: '0px',
+        slidesToShow: 3, // Show three slides, center one is active
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
+    });
+});
+
+</script>
 </html>

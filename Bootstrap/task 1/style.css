@@ -6,11 +6,6 @@ body{
     background-repeat: no-repeat;
 }
 
-.all{
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-}
 .li a{
     color: white !important;
     font-size: 14px;
@@ -20,4 +15,69 @@ body{
     border-radius: 10px !important;
     /* display: flex !important;
     justify-content: space-between !important; */
+}
+.c{
+    margin-top: 10% !important;
+}
+.con h3{
+    color: white !important;
+    font-size: 55px;
+}
+.con p{
+    color: white !important;
+    font-size: 15px;
+}
+.con button{
+    background-color: red !important;
+    color: white !important;
+    font-size: 15px !important;
+}
+.sc{
+    display: flex !important;
+
+}
+.slider {
+    width: 80%;
+    margin-top: -90px;
+    margin-left: 100px !important;
+}
+
+.slick-slide {
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    transform: scale(0.8); /* Scale down non-center images */
+    margin: 0 20px !important;
+    z-index: 1; /* Ensure the stacking order is correct */
+    position: relative; /* Make sure the position allows box-shadow to be visible */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+}
+
+.slick-center {
+    opacity: 1;
+    transform: scale(1.2); /* Enlarge the center image */
+    box-shadow: none !important;
+}
+.slick-track, .slick-slide {
+    height: 500px; /* Set your desired height for the slider */
+    box-shadow: 15px black !important;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block;
+}
+
+.slick-center img {
+    position: relative;
+    top: -50px; /* Moves the center image upward */
+}
+.slick-prev {
+    display: none !important;
+}
+
+/* Optionally style the right (next) arrow */
+.slick-next {
+    right: 30%; /* Adjust the right position if needed */
 }
