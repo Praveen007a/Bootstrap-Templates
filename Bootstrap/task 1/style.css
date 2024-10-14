@@ -1,83 +1,186 @@
 body{
-    background: url("img/bg.png") ;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden !important;
+}
+.navbar-toggler-icon{
+    background-color: white !important;
+    border: black !important;
+}
+.overall{
+    background: url("img/Mask\ Group\ 6.png") ;
     height: 100vh;
     background-position: center;
     background-size:cover ;
     background-repeat: no-repeat;
+    font-family: "Inter", sans-serif !important;
+    font-optical-sizing: auto;
+}
+.logo{
+    top: -2px;
+    left: 48px;
+    width: 150px;
+}
+.links{
+    border: 1px solid white !important;
+    width: 860px;
+    height: 48px;
+    border-radius: 11px;
+    opacity: 1;
+}
+.links a{
+    color: white !important;
+    font-size: 14px !important;
+}
+.intro{
+    width: 140px;
+    font-size: 14px;
+    
+}
+.social-icons img {         
+    width: 40px;               
+    height: 40px;             
+    display: flex !important;             
+    justify-content: center !important ;  
+    align-items: center !important;       
+    margin-left: 20px;         
+}
+.bbqcon{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+   
+} 
+/* .textcontent{
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+} */
+.bbq img{
+    width: 250px;
+    height: 250px;
 }
 
-.li a{
-    color: white !important;
-    font-size: 14px;
+.textcontent h1{
+    font-size: 28px ;
+    color: white;
+    align-items: center !important;
 }
-.link-page{
-    border: 1px white solid !important;
-    border-radius: 10px !important;
-    /* display: flex !important;
-    justify-content: space-between !important; */
-}
-.c{
-    margin-top: 10% !important;
-}
-.con h3{
-    color: white !important;
-    font-size: 55px;
-}
-.con p{
-    color: white !important;
+.textcontent p{
+    color: white;
     font-size: 15px;
 }
-.con button{
-    background-color: red !important;
-    color: white !important;
-    font-size: 15px !important;
+/* .bbqcon{
+    width: 400px !important;
+    
+} */
+.bbqcon button{
+    background-color: #FF0000;
+    padding: 15px;
+    color: white;
 }
-.sc{
-    display: flex !important;
-
+.inc{
+    width: 100% !important;
 }
-.slider {
-    width: 80%;
-    margin-top: -90px;
-    margin-left: 100px !important;
-}
-
-.slick-slide {
-    opacity: 0.5;
-    transition: all 0.3s ease;
-    transform: scale(0.8); /* Scale down non-center images */
-    margin: 0 20px !important;
-    z-index: 1; /* Ensure the stacking order is correct */
-    position: relative; /* Make sure the position allows box-shadow to be visible */
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.8);
+.inc:active{
+    background-color: #FF0000 !important;
+    width: 100% !important;
 }
 
-.slick-center {
-    opacity: 1;
-    transform: scale(1.2); /* Enlarge the center image */
-    box-shadow: none !important;
+.inc:focus{
+    background-color: #FF0000 !important;
 }
-.slick-track, .slick-slide {
-    height: 500px; /* Set your desired height for the slider */
-    box-shadow: 15px black !important;
-}
+@media (max-width: 600px) {
+    .maa{
+        background-color: black !important;
+    }
+    .links{
+        border: 1px solid white !important;
+        width: 100%;
+        height: 225px !important;
+        border-radius: 11px;
+        opacity: 1;
+        display: flex !important;;
+        align-items: center !important;
+        justify-content: center !important;
+        background-color: black !important;
+    }
+    .bbq img{
+        width: 200px !important;
+        height: 200px !important;
+        object-fit: contain !important;
+    }
 
-.slick-slide img {
-    width: 100%;
-    height: 100% !important;
-    object-fit: cover !important;
-    display: block;
+    .textcontent h1{
+        font-size: 22px ;
+        color: white;
+        align-items: center !important;
+    }
+    .textcontent p{
+        font-size: 13px ;
+        color: white;
+        align-items: center !important;
+    }
+    .logo{
+        height: 60px !important;
+        width: 100px !important;
+        object-fit: contain !important;
+    }
+    .social-icons{
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-evenly !important;
+    }
+    .inc{
+        width: 100% !important;
+    }
+    .inc:active{
+        background-color: #FF0000 !important;
+        width: 100% !important;
+    }
+    
+    .inc:focus{
+        background-color: #FF0000 !important;
+        width: 100% !important;
+    }
+    .intro{
+        width: 100% !important;
+       font-size: 14px;
+        
+    }
+    /* .ma{
+        position: relative !important;
+    }
+    .sc{
+        position: absolute !important;
+        margin-top: 60% !important;
+    } */
 }
-
-.slick-center img {
-    position: relative;
-    top: -50px; /* Moves the center image upward */
-}
-.slick-prev {
-    display: none !important;
-}
-
-/* Optionally style the right (next) arrow */
-.slick-next {
-    right: 30%; /* Adjust the right position if needed */
+@media (max-width:768px) {
+    .links{
+        border: 1px solid white !important;
+        width: 100%;
+        height: 225px !important;
+        border-radius: 11px;
+        opacity: 1;
+        display: flex !important;;
+        align-items: center !important;
+        justify-content: center !important;
+        background-color: black !important;
+    }
+    .social-icons{
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-evenly !important;
+    }
+    .maa{
+        background-color: black !important;
+    }
+    .bbq img{
+        width: 250px !important;
+        height: 250px !important;
+        object-fit: contain !important;
+    }
 }
